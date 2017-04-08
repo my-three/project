@@ -1,0 +1,177 @@
+<% include _block/header.html %>
+<%- css("ranking-List.css") %>
+</head>
+<body>
+<% include _block/topbar.html %>
+<% include _block/mall-head.html %>
+
+<!-- 内容 -->
+<section class="wrap clearfix">
+	<!-- 榜单声明 -->
+	<div class="search-area statement">
+		<div class="area-title clearfix">
+			<h5>榜单声明</h5>
+			<a href="#">产看发展指数细则&nbsp;></a>
+		</div>
+		<div class="area-content">
+			<p>1. 发展指数是表征某一家服务商综合情况的指标，代表服务商在平台综合影响力！</p>
+			<p>2. 薪福帮根据服务商备案公开可查的信息、数据，依据一套公开透明的模型，进行量化计算得出的研究成果，不收取任何费用， 请服务商不要咨询相关收费问题！如果有人冒充薪褔社工作人员借由评级一事向服务商骗取钱财，请及时向我们举报，热线电话：4000-355-937。</p>
+		</div>
+	</div>
+  <!-- 筛选区域 -->
+  <div class="search-area">
+    <dl>
+      <dt>城市</dt>
+      <dd class="hasmore">
+        <a href="javascript:;" class="current">不限</a>
+        <a href="javascript:;">北京市</a>
+        <a href="javascript:;">上海市</a>
+        <a href="javascript:;"> 成都市</a>
+        <a href="javascript:;">广州市</a>
+        <a href="javascript:;">深圳市</a>
+        <a href="javascript:;">杭州市</a>
+        <a href="javascript:;">郑州市</a>
+        <a href="javascript:;">齐齐哈尔市</a>
+        <a href="javascript:;">新疆维吾尔自治区</a>
+
+        <span class="show-more"><a href="#">更多<span class="glyphicon glyphicon-chevron-down"></span></a></span>
+       </dd>
+    </dl>
+    <dl>
+      <dt>主营业务</dt>
+      <dd>
+        <a href="javascript:;" class="current">不限</a>
+        <a href="javascript:;">人事外包</a>
+        <a href="javascript:;">社保代理</a>
+       </dd>
+    </dl>
+    <dl>
+      <dt>成立年限</dt>
+      <dd>
+        <a href="javascript:;" class="current">不限</a>
+        <a href="javascript:;">3年内</a>
+        <a href="javascript:;">3-5年</a>
+        <a href="javascript:;">5-10年</a>
+        <a href="javascript:;">10年以上</a>
+       </dd>
+    </dl>
+  </div>
+	<div class="selected-rules">
+		<select>
+			<option>2016年12月</option>
+			<option>2016年12月</option>
+			<option>2016年12月</option>
+			<option>2016年12月</option>
+		</select>
+		<div class="search-text">
+			<input type="text" placeholder="搜索服务商">
+			<!-- <input type="submit" value="搜索"> -->
+      <a href="#" class="btn-search">搜索</a>
+		</div>
+	</div>
+
+	
+  <div class="result-list">
+    <!-- 结果集 -->
+    <table class="table-mall">
+      <thead>
+        <tr>
+          <th class="">排名</th>
+          <th class="">服务商名称</th>
+          <th class="">
+          	<i class="down"></i>
+          	发展指数
+          	<div class="tip-box">
+          		<i class="tip"></i>
+	          	<span class="tip-info">
+	          		<i class="tip-info-caret"></i>
+	          		发展指数是指服务商在平台的综合影响力，综合实力，服务能力，专业度，以及未来发展潜力
+	          	</span>
+          	</div>
+          </th>
+          <th class="">成立日期</th>
+          <th class=""><i class="up"></i>注册资本</th>
+          <th class="">服务地区</th>
+          <th class=""><i class="up"></i>成交金额</th>
+          <th class="">主营业务</th>
+        </tr>
+      </thead>
+      <tbody>
+				<% for(var i=0; i<10; i++) { %>
+                <tr>
+                  <% if(i < 3) { %>
+                    <td class="colorOrange text-center">NO <%= i+1 %> </td>
+                  <% } else {%>
+                    <td class="text-center"><%= i+1 %></td>
+                  <% } %>
+                  <td class="service-company" title="北京汇智众合人力资源有限公司">北京汇智众合人力资源有限公司</td>
+                  <td class="color-theme">87.98</td>
+                  <td>2015.06.07</td>
+                  <td class="colorOrange">3000万</td>
+                  <td>
+                    <span class="service-content pull-left">北京市、上海市、广州市、京市、上海市、广州市</span>
+                    <i class="pull-left">(24)</i>
+                  </td>
+                  <td class="colorOrange">2300.00</td>
+                  <td class="service-content">人事外包、社保代理、人事外包、人事外包、社保代理、人事外包</td>
+                </tr>
+                <% } %>
+      </tbody>
+    </table>
+    <div class="null-cp">
+      <img src="./assets/img/null.png">
+      <p>大家卡萨打开撒娇阿卡放假的发送卡减肥的凯！撒减肥的凯撒爱减肥的凯撒飞机的凯撒！</p>
+      <a href="#">马上注册</a>
+    </div>
+    <!-- 翻页 -->
+    <div class="organization-page mb120">
+      <ul class="pagination">
+        <li class="pre disabled">
+            <a href="javascript:;"> 上一页 </a>
+        </li>
+        <li class="active">
+            <a href="javascript:;">1</a>
+        </li>
+        <li>
+            <a href="javascript:;">2</a>
+        </li>
+        <li><span class="ellipsis">...</span></li>
+        <li>
+            <a href="javascript:;">6</a>
+        </li>
+        <li>
+            <a href="javascript:;">7</a>
+        </li>
+        <li>
+            <a href="javascript:;">8</a>
+        </li>
+        <li><span class="ellipsis">...</span></li>
+        <li>
+            <a href="javascript:;">96</a>
+        </li>
+        <li>
+            <a href="javascript:;">97</a>
+        </li>
+        <li>
+            <a href="javascript:;">98</a>
+        </li>
+        <li class="next">
+           <a href="javascript:;"> 下一页 </a>
+        </li>
+        <li class="total">
+            共<i>98</i>页 / <i>450</i> 条
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</section>
+
+
+<!-- 内容 end -->
+
+<% include _block/footer.html %>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "scripts": {
+    "gulp": "gulp",
+    "cnpm": "cnpm"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "cnpm": "^4.5.0",
+    "del": "^2.2.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-ejs": "^3.0.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-lazyimagecss": "^2.0.8",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rev-all": "^0.9.7",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-sass": "^3.1.0",
+    "gulp-seajs-concat": "^1.0.5",
+    "gulp-seajs-transport": "^0.4.0",
+    "gulp-tmtsprite": "0.0.22",
+    "gulp-usemin": "^0.3.28",
+    "http-proxy-middleware": "^0.17.4",
+    "imagemin-pngquant": "^5.0.0",
+    "merge-stream": "^1.0.1",
+    "postcss-pxtorem": "^4.0.0",
+    "posthtml-px2rem": "0.0.3"
+  }
+}
